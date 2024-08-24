@@ -1,0 +1,4 @@
+
+	java:S116"NRename this field "LOG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãšù8ÓÑ³Øñ1J$fbcc4aee-c327-4439-841f-e9aefa1981ba
+š
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(¤ûºÈøÿÿÿÿ8ä÷±Øñ1J$e337223d-3934-49e9-b1fe-e7c0e28d79cc

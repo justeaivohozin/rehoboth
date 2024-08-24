@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/campus-service/src/main/resources/db/migration/V1.1__init__campus_service..sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/campus-service/src/main/resources/db/migration/V1.2__update_datetime_default_value.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/campus-service/src/main/resources/db/migration/V1.3__update_datetime_default_value_all_table.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/campus-service/src/main/resources/db/migration/V1.4__add_column_to_campus.sql" dialect="MySQL" />
+  </component>
+</project>

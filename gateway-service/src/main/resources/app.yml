@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: cs-route
+            uri: http://localhost:8090/
+            predicates:
+              - Path=/campus-service/**
+          - id: ps-route
+            uri: http://localhost:8090/
+            predicates:
+              - Path=/person-service/**
+  application:
+    name: gateway-service
+server:
+  port: 8088

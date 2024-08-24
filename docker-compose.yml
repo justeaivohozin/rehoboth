@@ -1,0 +1,41 @@
+version: '3.3'
+services:
+  campus_service_database:
+    image: mysql:latest
+    container_name: campus_service_container
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'CAMPUS_SERVICE_DB'
+      # So you don't have to use root, but you can if you like
+      MYSQL_USER: 'campus-service'
+      # You can use whatever password you like
+      MYSQL_PASSWORD: '4ec75baf2989a3c826d356dad22c79d82719f2c4'
+      # Password for root access
+      MYSQL_ROOT_PASSWORD: '4ec75baf2989a3c826d356dad22c79d82719f2c4'
+    ports:
+      # <Port exposed> : <MySQL Port running inside container>
+      - '3307:3306'
+    expose:
+      # Opens port 3306 on the container
+      - '3307'
+      # Where our data will be persisted
+    volumes:
+      - campus_service_db:/var/lib/mysql
+
+  person_service_database:
+    image: postgres:alpine
+    container_name: person_service_container
+    restart: always
+    ports:
+      - '5433:5432'
+    volumes:
+      - person_service_db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: '2024_rehoboth_personservice_icc'
+      POSTGRES_USER: 'person-service'
+      POSTGRES_DB: 'person-service-database'
+
+      # Names our volume
+volumes:
+  campus_service_db:
+  person_service_db:

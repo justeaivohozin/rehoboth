@@ -1,0 +1,12 @@
+
+G
+java:S1068	"*Remove this unused "status" private field.(šŞÇ²8´¢ÎŠï1
+p
+java:S1068
+"-Remove this unused "timestamp" private field.(„¶†8¢ ÅŠï1J$2a4cc4a4-1268-4243-8a68-c5afc7713289
+s
+java:S1068"+Remove this unused "message" private field.(ù„è¿ûÿÿÿÿ8¢ ÅŠï1J$e67e068f-29fb-4c11-8838-89444449a8c4
+x
+java:S1068"0Remove this unused "debugMessage" private field.(š®ğ¬úÿÿÿÿ8¢ ÅŠï1J$63d69cf3-b42a-4b8a-b9a7-9d37c1772338
+u
+java:S1068"-Remove this unused "subErrors" private field.(åı“Êûÿÿÿÿ8£ ÅŠï1J$4dc7f01e-9f04-4e1e-876f-e3fdffdb2f68
